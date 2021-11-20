@@ -45,7 +45,7 @@ public class Main {
 
     public static void heal() {
         for (int i = 0; i < playersName.length; i++) {
-            if (playersHealth[i] > 0) {
+            if (playersHealth[i] > 0 && i !=3) {
                 int add = ran();
                 playersHealth[i] += add;
                 System.out.println(playersName[i] + " healed +" + add);
